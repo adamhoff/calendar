@@ -1,0 +1,13 @@
+<h2>Edit <%= @day.date %> </h2>
+
+<div class="edit-form">
+  <%= form_for(@day) do |f| %>
+
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+
+    <%= f.submit %>
+  <% end %>
+</div>
+
+<%= link_to "Back", month_path(@day.month)  %>

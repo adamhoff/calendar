@@ -1,2 +1,9 @@
-<h1>Months#show</h1>
-<p>Find me in app/views/months/show.html.erb</p>
+<h1 class="month_name"><%= @month.name %> <h4 class="back"><%= link_to 'Back', root_path %> </h4> </h1>
+<div class="container">
+  <% @month.days.each do |day| %>
+    <div class="day">
+      <h2><%= day.date %> <h3 class="content"><%= day.content %></h3> </h2>
+      <h5><%= link_to 'Edit', edit_day_path %></h5>
+    </div>
+  <% end %>
+</div>

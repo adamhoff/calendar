@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+ /*.container{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   width: 50%;
+ }*/
+.day{
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin: 1px;
+  border: 1px solid black;
+}

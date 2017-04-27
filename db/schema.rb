@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20170427153155) do
   enable_extension "plpgsql"
 
   create_table "days", force: :cascade do |t|
+    t.string   "date"
     t.string   "content"
     t.integer  "month_id"
     t.datetime "created_at", null: false
