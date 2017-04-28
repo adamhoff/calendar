@@ -2,8 +2,12 @@
 <div class="container">
   <% @month.days.each do |day| %>
     <div class="day">
-      <h2><%= day.date %> <h3 class="content"><%= day.content %></h3> </h2>
-      <h5><%= link_to 'Edit', edit_day_path %></h5>
+      <h3 class="date"><%= day.date%><h5 class="edit"><%= link_to 'Edit', edit_month_day_path(day.month_id, day.date) %></h5></h3>
+      <hr>
+        <li class="content"><%= day.content %></li>
+        <li class="content"><%= day.content1 %></li>
+        <li class="content"><%= day.content2 %></li>
+        <li class="content"><%= day.content3 %></li>
     </div>
   <% end %>
 </div>

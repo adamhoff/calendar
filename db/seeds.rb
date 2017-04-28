@@ -25,20 +25,20 @@ december = Month.create({name: 'December', month_length: 31})
 
 #Days
 28.times do |i|
-  Day.create(date: i+1, content: "", month: february)
+  Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: february)
 end
-30.times do|i|
-  Day.create(date: i+1, content: "", month: april)
-  Day.create(date: i+1, content: "", month: june)
-  Day.create(date: i+1, content: "", month: september)
-  Day.create(date: i+1, content: "", month: november)
+30.times do |i|
+  Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: april)
+  Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: june)
+  Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: september)
+  Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: november)
 end
 31.times do |i|
-  Day.create(date: i+1, content: "", month: january)
-  Day.create(date: i+1, content: "", month: march)
-  Day.create(date: i+1, content: "", month: may)
-  Day.create(date: i+1, content: "", month: july)
-  Day.create(date: i+1, content: "", month: august)
-  Day.create(date: i+1, content: "", month: october)
-  Day.create(date: i+1, content: "", month: december)
+  Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: january)
+  Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: march)
+  Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: may)
+  Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: july)
+  Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: august)
+  Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: october)
+  Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: december)
 end

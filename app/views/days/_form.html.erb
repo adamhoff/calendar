@@ -1,0 +1,8 @@
+<%= form_for ([@month, @day]) do |f| %>
+  <%= f.label :Reminders %>
+  <%= f.text_field :content, placeholder: "Place reminders here" %>
+  <%= f.text_field :content1, placeholder: "Place reminders here" %>
+  <%= f.text_field :content2, placeholder: "Place reminders here" %>
+  <%= f.text_field :content3, placeholder: "Place reminders here" %>
+  <%= f.submit %>
+<% end %>
