@@ -22,34 +22,43 @@
  body{
    background-color: oldlace;
 }
+.container{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
 .day{
-  float: left;
   width: 175px;
-  height: 120px;
+  height: 125px;
   margin: 1px;
   border: 2px solid black;
 }
-.edit a{
+.edit a, .edit_double a{
   text-decoration: none;
   color: firebrick;
 }
 .edit{
-  float: right;
-  font-size: 20px;
-  display: inline;
+  display: inline-flex;
+  font-size: 15px;
   margin: 0;
-  margin-right: 5px;
+  margin-left: 115px;
 }
 .date{
-  font-size: 20px;
-  display: inline;
+  display: inline-flex;
+  font-size: 30px;
+  margin: 0px;
+}
+.edit_double{
   margin: 0;
-  margin-left: 5px;
+  display: inline-flex;
+  font-size: 15px;
+  margin-left: 100px;
 }
 .back a{
   text-decoration: none;
   color: firebrick;
 }
 hr{
+  margin-top: 0;
   border-color: firebrick;
+  border-width: medium;
 }

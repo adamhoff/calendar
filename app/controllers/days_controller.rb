@@ -8,12 +8,14 @@ class DaysController < ApplicationController
   end
 
   def new
+    @month = Month.find(params[:month_id])
     @day = @month.days.new
   end
 
   def create
-    @day = @month.day.create(day_params)
-    redirect_to @day
+    @month = Month.find(params[:month_id])
+    @day = @month.days.create(day_params)
+    redirect_to month_path(@month)
   end
 
   def edit
@@ -22,10 +24,10 @@ class DaysController < ApplicationController
   end
 
   def update
+    @month = Month.find(params[:month_id])
     @day = Day.find(params[:id])
     @day.update(day_params)
-    redirect_to month_path(@day.month)
-    @day.reload
+    redirect_to month_path(@month)
   end
 
   def destroy
