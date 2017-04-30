@@ -46,6 +46,7 @@
   display: inline-flex;
   font-size: 30px;
   margin: 0px;
+  margin-left: 5px;
 }
 .edit_double{
   margin: 0;
@@ -61,4 +62,7 @@ hr{
   margin-top: 0;
   border-color: firebrick;
   border-width: medium;
+}
+li{
+  margin-left: 5px;
 }
