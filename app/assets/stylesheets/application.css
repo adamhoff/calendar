@@ -19,6 +19,7 @@
    justify-content: flex-start;
    width: 50%;
  }*/
+
  body{
    background-color: oldlace;
 }
@@ -26,11 +27,19 @@
   display: inline-flex;
   flex-wrap: wrap;
 }
+.month a{
+  color: black;
+}
+.month{
+  text-align: center;
+display: inline-block;
+}
 .day{
   width: 175px;
   height: 125px;
   margin: 1px;
   border: 2px solid black;
+  background-color: aliceblue;
 }
 .edit a, .edit_double a{
   text-decoration: none;
