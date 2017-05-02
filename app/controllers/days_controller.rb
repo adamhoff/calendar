@@ -31,6 +31,7 @@ class DaysController < ApplicationController
   end
 
   def destroy
+    @month = Month.find(params[:month_id])
     @day = Day.find(params[:id])
     @day.content = ""
     @day.content1 = ""
