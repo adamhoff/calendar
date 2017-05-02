@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   resources :months, only: [:index, :show] do
     resources :days
   end
-  end
+end
 # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

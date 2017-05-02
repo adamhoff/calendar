@@ -33,6 +33,9 @@ class DaysController < ApplicationController
   def destroy
     @day = Day.find(params[:id])
     @day.content = ""
+    @day.content1 = ""
+    @day.content2 = ""
+    @day.content3 = ""
     redirect_to @month
   end
 

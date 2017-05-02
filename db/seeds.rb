@@ -27,12 +27,14 @@ december = Month.create({name: 'December', month_length: 31})
 28.times do |i|
   Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: february)
 end
+
 30.times do |i|
   Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: april)
   Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: june)
   Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: september)
   Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: november)
 end
+
 31.times do |i|
   Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: january)
   Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: march)
@@ -41,4 +43,27 @@ end
   Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: august)
   Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: october)
   Day.create(date: i+1, content: "", content1: "", content2: "", content3: "", month: december)
+end
+
+1.times do |i|
+  Day.create(date: 0, content: "", content1: "", content2: "", content3: "", month: may)
+end
+2.times do |i|
+  Day.create(date: 0, content: "", content1: "", content2: "", content3: "", month: august)
+end
+3.times do |i|
+  Day.create(date: 0, content: "", content1: "", content2: "", content3: "", month: february)
+  Day.create(date: 0, content: "", content1: "", content2: "", content3: "", month: march)
+  Day.create(date: 0, content: "", content1: "", content2: "", content3: "", month: november)
+end
+4.times do |i|
+  Day.create(date: 0, content: "", content1: "", content2: "", content3: "", month: june)
+end
+5.times do |i|
+  Day.create(date: 0, content: "", content1: "", content2: "", content3: "", month: september)
+  Day.create(date: 0, content: "", content1: "", content2: "", content3: "", month: december)
+end
+6.times do |i|
+  Day.create(date: 0, content: "", content1: "", content2: "", content3: "", month: april)
+  Day.create(date: 0, content: "", content1: "", content2: "", content3: "", month: july)
 end

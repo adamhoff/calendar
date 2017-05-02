@@ -1,7 +1,5 @@
-<h3>Edit <%= link_to "Back", month_path(@month)  %> </h3>
-<h2><%=@month.name%>
-  <%= @day.date.to_i.ordinalize %> </h2>
-
+<h3><%= link_to "Back", month_path(@month)  %> </h3>
+<h2><%=@month.name%> <%= @day.date.to_i.ordinalize %> </h2>
 <div class="edit-form">
   <%= render "form" %>
 </div>

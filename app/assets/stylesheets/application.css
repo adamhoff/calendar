@@ -13,41 +13,69 @@
  *= require_tree .
  *= require_self
  */
- /*.container{
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-start;
-   width: 50%;
- }*/
-
- body{
-   background-color: oldlace;
+body{
+   background: snow;
+}
+hr{
+  margin-top: 0;
+  border-color: white;
+  border-width: medium;
+}
+li{
+  margin-left: 5px;
+  text-align: left;
 }
 .container{
   display: inline-flex;
   flex-wrap: wrap;
+}
+.month_name{
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  background-color: coral;
+  display: inline-block;
+  margin: 0;
+  margin-left: 450px;
+  padding: 10px;
+  padding: 10px 90px;
+  border: 2px solid black;
+}
+.month_name a{
+  text-decoration: none;
+  color: white;
 }
 .month a{
   color: black;
 }
 .month{
   text-align: center;
-display: inline-block;
+  display: inline-block;
+}
+.month img{
+  height: 220px;
+  width: 220px;
 }
 .day{
   width: 175px;
   height: 125px;
   margin: 1px;
   border: 2px solid black;
-  background-color: aliceblue;
-  transition: 900ms;
+  background-color: coral;
+  transition: 700ms;
+}
+.day:nth-of-type(1), .day:nth-of-type(8), .day:nth-of-type(15), .day:nth-of-type(22), .day:nth-of-type(29), .day:nth-of-type(35), .day:nth-of-type(7), .day:nth-of-type(14), .day:nth-of-type(21), .day:nth-of-type(28), .day:nth-of-type(36){
+  background-color: crimson;
 }
 .day:hover{
-  background-color: lightskyblue;
+  background-color: lightsalmon;
 }
-.edit a, .edit_double a{
-  text-decoration: none;
-  color: firebrick;
+.date{
+  display: inline-flex;
+  font-size: 30px;
+  margin: 0;
+  margin-left: 5px;
 }
 .edit{
   display: inline-flex;
@@ -55,27 +83,21 @@ display: inline-block;
   margin: 0;
   margin-left: 115px;
 }
-.date{
-  display: inline-flex;
-  font-size: 30px;
-  margin: 0px;
-  margin-left: 5px;
-}
 .edit_double{
   margin: 0;
   display: inline-flex;
   font-size: 15px;
   margin-left: 100px;
 }
+.edit a, .edit_double a{
+  text-decoration: none;
+  color: white;
+}
 .back a{
   text-decoration: none;
-  color: firebrick;
+  color: black;
+  font-size: 25px;
 }
-hr{
-  margin-top: 0;
-  border-color: firebrick;
-  border-width: medium;
-}
-li{
-  margin-left: 5px;
+.content{
+  color: white;
 }
