@@ -69,7 +69,7 @@ li{
   background-color: crimson;
 }
 .day:hover{
-  background-color: lightsalmon;
+  background-color: indianred;
 }
 .date{
   display: inline-flex;
