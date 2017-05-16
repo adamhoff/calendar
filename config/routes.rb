@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'months#index'
+  root: '/months'
   resources :months, only: [:index, :show] do
     resources :days
   end
