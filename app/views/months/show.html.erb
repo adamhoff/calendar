@@ -6,27 +6,37 @@
   <% if @month.id+1 < 13 %>
   <%= link_to '->' , month_path(@month.id+1)%>
   <% end %>
-  <h4 class="back"><%= link_to 'Back', root_path %>
+  <h4 class="back"><%= link_to 'SML', root_path %>
   </h4>
 </h1>
 <div class="container">
   <% @month.days.sort_by {|day| day.date.to_i}.each do |day| %>
   <div class="day">
     <% if day.date.to_i < 10 && day.date.to_i > 0 %>
-    <h3 class="date"> <%= day.date%> <h5 class="edit"> <%= link_to 'Edit', edit_month_day_path(@month, day) %> </h5> </h3>
+    <h3 class="date">
+      <%= day.date%>
+      <h5 class="edit">
+        <%= link_to 'Edit', edit_month_day_path(@month, day) %>
+      </h5>
+    </h3>
     <hr>
-    <li class="content"><%= day.content %></li>
-    <li class="content"><%= day.content1 %></li>
-    <li class="content"><%= day.content2 %></li>
-    <li class="content"><%= day.content3 %></li>
-    <%  elsif day.date.to_i >= 10 && day.date.to_i > 0 %>
-    <h3 class="date"> <%= day.date%> <h5 class="edit_double"> <%= link_to 'Edit', edit_month_day_path(@month, day) %> </h5> </h3>
-    <hr>
-    <li class="content"><%= day.content %></li>
-    <li class="content"><%= day.content1 %></li>
-    <li class="content"><%= day.content2 %></li>
-    <li class="content"><%= day.content3 %></li>
-    <% end %>
-  </div>
+  <li class="content"><%= day.content %></li>
+  <li class="content"><%= day.content1 %></li>
+  <li class="content"><%= day.content2 %></li>
+  <li class="content"><%= day.content3 %></li>
+  <%  elsif day.date.to_i >= 10 && day.date.to_i > 0 %>
+  <h3 class="date">
+    <%= day.date%>
+    <h5 class="edit_double">
+      <%= link_to 'Edit', edit_month_day_path(@month, day) %>
+    </h5>
+  </h3>
+  <hr>
+  <li class="content"><%= day.content %></li>
+  <li class="content"><%= day.content1 %></li>
+  <li class="content"><%= day.content2 %></li>
+  <li class="content"><%= day.content3 %></li>
   <% end %>
+</div>
+<% end %>
 </div>
