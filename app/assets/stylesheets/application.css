@@ -38,9 +38,9 @@ li{
   display: inline-block;
   margin: 0;
   margin-left: 450px;
-  padding: 10px;
   padding: 10px 90px;
   border: 2px solid black;
+  filter: drop-shadow(1px 3px 10px black);
 }
 .month_name a{
   text-decoration: none;
@@ -61,9 +61,10 @@ li{
   width: 175px;
   height: 125px;
   margin: 1px;
-  border: 2px solid black;
+  border: 2px inset black;
   background-color: coral;
   transition: 700ms;
+  filter: drop-shadow(1px 3px 3px black);
 }
 .day:nth-of-type(1), .day:nth-of-type(8), .day:nth-of-type(15), .day:nth-of-type(22), .day:nth-of-type(29), .day:nth-of-type(35), .day:nth-of-type(7), .day:nth-of-type(14), .day:nth-of-type(21), .day:nth-of-type(28), .day:nth-of-type(36){
   background-color: crimson;
