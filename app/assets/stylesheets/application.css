@@ -15,16 +15,17 @@
  */
 
 /*Landing page*/
+.front_page{
+  background-image: url("http://aurora-awards.com/wp-content/uploads/2017/05/abstract-backgrounds-wallpapers-background-wallpaper-in-hd-size-2100-1500.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .bg-0{
-  font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
-  background-color: #474e5d;
-  color: rosybrown;
+  font-family: 'Source Sans Pro', sans-serif;
   padding: 70px 0px 250px 0px;
-  background: linear-gradient(springgreen, paleturquoise);
-
 }
 .bg-0 .title{
-margin-bottom: 0;
+  margin-bottom: 0;
   font-size: 46px;
 }
 .bg-0 hr{
@@ -33,34 +34,36 @@ margin-bottom: 0;
   margin-bottom: 10px;
 }
 .bg-1{
-  font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
-  color: rosybrown;
+  font-family: 'Source Sans Pro', sans-serif;
   height: 100%;
-  background-color: paleturquoise;
   padding-bottom: 203px;
 }
 .bg-1 a{
-  color: #474e5d;
+  color: black;
   padding-right: 0;
   margin-right: 0;
   font-size: 100px;
 }
 .bg-1 a:hover{
-  color: rosybrown;
   filter: drop-shadow(1px 3px 10px white);
   text-decoration: none;
 }
 .bg-1 p{
   margin-right: 25px;
 }
+.middle p{
+  color: white;
+}
 /*Calendar Page*/
 body{
-   background: linear-gradient(springgreen,turquoise);
+  background-image: url("http://aurora-awards.com/wp-content/uploads/2017/05/abstract-backgrounds-wallpapers-background-wallpaper-in-hd-size-2100-1500.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 hr{
   margin-top: 0;
   margin-bottom: 0;
-  border-color: rosybrown;
+  border-color: black;
   border-width: medium;
 }
 li{
@@ -74,10 +77,10 @@ li{
   flex-wrap: wrap;
 }
 .month_name{
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 40px;
   text-align: center;
-  color: rosybrown;
+  color: black;
   background-color: turquoise;
   display: inline-block;
   margin-left: 450px;
@@ -87,10 +90,11 @@ li{
 }
 .month_name a{
   text-decoration: none;
-  color: rosybrown;
+  font-family: sans-serif;
+  color: black;
 }
 .month a{
-  color: rosybrown;
+  color: black;
 }
 .month{
   text-align: center;
@@ -109,11 +113,6 @@ li{
   transition: 700ms;
   filter: drop-shadow(1px 3px 3px black);
 }
-/*.day:nth-of-type(1), .day:nth-of-type(8), .day:nth-of-type(15), .day:nth-of-type(22), .day:nth-of-type(29), .day:nth-of-type(36){
-  background: linear-gradient(to right, springgreen, turquoise);
-}
-.day:nth-of-type(7), .day:nth-of-type(14), .day:nth-of-type(21), .day:nth-of-type(28), .day:nth-of-type(35){
-  background: linear-gradient(to left, springgreen, turquoise);*/
 .day:hover{
   background-color: springgreen;
 }
@@ -137,21 +136,17 @@ li{
 }
 .edit a, .edit_double a{
   text-decoration: none;
-  color: rosybrown;
+  color: black;
 }
 .back a{
   margin-left: 20px;
   text-decoration: none;
-  color: #474e5d;
+  color: black;
   font-size: 25px;
 }
 .back{
   transform: scale(1, 1.7);
 }
-.back a:hover{
-  color: rosybrown;
-  filter: drop-shadow(1px 3px 10px white);
-}
 .content{
-  color: rosybrown;
+  color: black;
 }
